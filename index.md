@@ -1,8 +1,3 @@
-# __Hello world__  
+# __Rona Darabi__
 
-_Hello world_ 
-
-> Hello world
-
-1. Hello
-2. World
+[Lab Report 1](https://<your-username>.github.io/<your-lab-reports-repo>/lab-report-1-week-0.html)
