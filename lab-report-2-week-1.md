@@ -20,6 +20,15 @@ Once logged in, you can try out a few commands. First, I accessed this directory
 
 ![outputSC](https://user-images.githubusercontent.com/68180000/193379461-26876d04-7bfb-47ed-b8ce-a41101cf09fa.jpg)
 
+Other commands include: 
+
+* `cd ~`
+* `cd`
+* `ls -lat`
+* `ls -a`
+* `cp /home/linux/ieng6/cs15lfa22/public/hello.txt~/`
+* `cat /home/linux/ieng6/cs15lfa22/public/hello.txt`
+
 ## Moving files with `scp`
 
 ## Setting an SSH Key
