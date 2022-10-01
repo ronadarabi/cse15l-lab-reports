@@ -29,7 +29,16 @@ Other commands include:
 * `cp /home/linux/ieng6/cs15lfa22/public/hello.txt~/`
 * `cat /home/linux/ieng6/cs15lfa22/public/hello.txt`
 
+To log out, press Ctrl + D and then type `exit`.
+
 ## Moving files with `scp`
+Say you have a file on your computer that you would like to open on the remote computer. We can use the `scp` command on the client computer, your computer. Let's try this out. 
+
+First, make sure the file is created on the client computer. The file I created is named `WhereAmI.java` with a `WhereAmI` class: 
+
+![whereAmISC](https://user-images.githubusercontent.com/68180000/193379755-a2c7ae5a-4c5d-4ba2-9345-1463d4b6c6a1.jpg)
+
+To check if it runs we can use `javac WhereAmI.java` and then `java WhereAmI`. The first command is responsible for the compiling while the second one does the running. 
 
 ## Setting an SSH Key
 
