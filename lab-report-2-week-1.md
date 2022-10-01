@@ -10,7 +10,7 @@ Fortunately I already had Visual Studio Code installed! However, if you do not a
 ## Remotely Connecting
 Now time to connect to our remote server! If you are on Windows, check to see if you have a program called OpenSSH. If you do not, use this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) to install the OpenSSH client. 
 
-Next, log in with `$ ssh cs15lfa22zz@ieng6.ucsd.edu`, replacing the 'zz' with the two letters in your specific username. Even though I had reset my password in advance, I was not able to successfully log in with my username and instead had to use the TA email and password. 
+Next, log in with `$ ssh cs15lfa22zz@ieng6.ucsd.edu`, replacing the 'zz' with the two letters specific to your username. Even though I had reset my password in advance, I was not able to successfully log in with my username and instead had to use the TA email and password. 
 
 ## Trying Some Commands 
 
