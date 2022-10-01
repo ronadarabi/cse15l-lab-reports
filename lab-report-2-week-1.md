@@ -17,8 +17,8 @@ Because I used the TA log in, I created a directory to work in with the command 
 
 ## Trying Some Commands 
 Once logged in, you can try out a few commands. First, I accessed this directory using `cd ronasDirectory`. From there, I used the following command, `ls /home/linux/ieng6/cs15lfa22/cs15lfa22nf` to access my lab partner, Chris', file. The output looked like this: 
-![outputSC](https://user-images.githubusercontent.com/68180000/193379461-26876d04-7bfb-47ed-b8ce-a41101cf09fa.jpg)
 
+![outputSC](https://user-images.githubusercontent.com/68180000/193379461-26876d04-7bfb-47ed-b8ce-a41101cf09fa.jpg)
 
 ## Moving files with `scp`
 
