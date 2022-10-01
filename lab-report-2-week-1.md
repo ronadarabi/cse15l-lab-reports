@@ -43,6 +43,9 @@ To check if it runs we can use `javac WhereAmI.java` and then `java WhereAmI`. T
 To see if it is on the remote computer, use `ssh` to log in and `ls` to search for it. You can then run the `javac WhereAmI.java` and `java WhereAmI` commands to verify that it worked. 
 
 ## Setting an SSH Key
-To save time, we can make it so that we do not have to keep re-entering our passwords. 
+To save time, we can make it so that we do not have to keep re-entering our passwords. This is a general overview of what the first step looks like: 
+![keygenSC](https://user-images.githubusercontent.com/68180000/193380133-5b833564-151c-4058-b5d7-89e2ee3be40e.jpg)
+
+First I typed in `ssh-keygen` and once prompted with 'Enter file', I pressed enter. Since I am using the TA's account, it asked me to overwrite so I pressed `y` for yes. 
 
 ## Optimizing Remote Running
