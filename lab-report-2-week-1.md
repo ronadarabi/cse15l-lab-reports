@@ -55,19 +55,19 @@ To save time, we can make it so that we do not have to keep re-entering our pass
 
 ![sshkeygen2](https://user-images.githubusercontent.com/68180000/195667299-e6074f56-4aa7-416d-b7d5-131e356a9ced.jpg)
 
-First I typed in `ssh-keygen -t ed25519` (this is because I am on Windows) and once prompted with 'Enter file', I pressed enter. After getting the keyart, I then logged in to the server using `ssh`, and once on the server, used `mkdir .ssh` since .ssh is the directory we stored the file in. I then logged out of the server, back to the client computer. 
+First I typed in `ssh-keygen -t ed25519` (this is because I am on Windows) and once prompted with 'Enter file', I pressed enter. After getting the keyart, I then logged in to the server using `ssh`, and once on the server, used `mkdir .ssh` since .ssh is the directory we stored the file in. I then logged out of the server, back to the client computer. Then enter the path shown in the screenshot and your username. Mine looked like this `scp \Users\ronad/.ssh/id_ed25519.pub cs15lfa22mv@ieng6.ucsd.edu:~/.ssh/authorized_keys`.
 
 This is me logging in without password: 
 ![loggedInSC3](https://user-images.githubusercontent.com/68180000/195680977-c8eeec95-7fd9-42b3-921a-1ca339dd71d8.jpg)
 
 
 ## Optimizing Remote Running
-To optimize the remote running, I began typing in the following: 
-* `scp WhereAmI.java cs15lfa22ta2@ieng6.ucsd.edu:~/ronasDirectory`
-* Password
-At this point I did get stuck. I am not sure what happened and think it could have something to do with the commands I ran in the 'Setting an SSH Key' (as I was not entirely sure if what I was doing was correct) or just that generally (as read in the prompt) it is not reliable to use the TA account because sometimes they change passwords (I emailed the TA about this). 
+To optimize the remote running, I began typing in what is shown in the screenshots: 
 
-![taLogInSC](https://user-images.githubusercontent.com/68180000/193384232-40ab5200-3213-4df9-919f-0cbc8fe7e93b.jpg)
+![scpSC](https://user-images.githubusercontent.com/68180000/195696774-d105aef3-9cd7-461d-bc1c-9a2b9e53d70c.jpg)
 
-Ideally though, I would have logged in again using `ssh` and then accessed the `javac WhereAmI.java` and `java WhereAmI` commands using the up-arrow key. 
+![lsSC](https://user-images.githubusercontent.com/68180000/195696670-7c07fd60-a106-407a-bc9e-015f523f56b4.jpg)
 
+![multipleFiles](https://user-images.githubusercontent.com/68180000/195696513-acabd5a1-18c6-44e4-9c0f-7b520e5644ed.jpg)
+
+This ran the WhereAmI.java file (which had been updated with a hello!). 
