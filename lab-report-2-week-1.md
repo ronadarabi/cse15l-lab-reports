@@ -52,9 +52,11 @@ To see if it is on the remote computer, use `ssh` to log in and `ls` to search f
 
 ## Setting an SSH Key
 To save time, we can make it so that we do not have to keep re-entering our passwords. This is a general overview of what the first step looks like: 
-![sshKeyGenSC](https://user-images.githubusercontent.com/68180000/195666824-47c5945b-7349-48bc-ab27-fcc399f6e170.jpg)
 
-First I typed in `ssh-keygen` and once prompted with 'Enter file', I pressed enter. Since I am using the TA's account, it asked me to overwrite so I pressed `y` for yes. At this point, because this is not my account, I was scared to mess anything up on the TA's account so I got stuck here and unfortunately did not finish the step (I did not have time to go to office hours but will go next week to figure everything out with my account!). However my understanding is that after getting to the screenshot, you should log in on the client computer using `ssh`. Once on server, use `mkdir .ssh` and then type `<logout>`. Back on the client computer, type in `scp` and then, on the same line, use the username and the path as seen in the screenshot. These are the steps I would take on my own account. 
+![sshkeygen2](https://user-images.githubusercontent.com/68180000/195667299-e6074f56-4aa7-416d-b7d5-131e356a9ced.jpg)
+
+First I typed in `ssh-keygen -t ed25519` (this is because I am on Windows) and once prompted with 'Enter file', I pressed enter. After getting the keyart, I then logged in to the server using `ssh`, and once on the server, used `mkdir .ssh` since .ssh is the directory we stored the file in. I then logged out of the server, back to the client computer. 
+
 
 ## Optimizing Remote Running
 To optimize the remote running, I began typing in the following: 
