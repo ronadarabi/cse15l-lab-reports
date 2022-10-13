@@ -56,6 +56,7 @@ To save time, we can make it so that we do not have to keep re-entering our pass
 ![sshkeygen2](https://user-images.githubusercontent.com/68180000/195667299-e6074f56-4aa7-416d-b7d5-131e356a9ced.jpg)
 
 First I typed in `ssh-keygen -t ed25519` (this is because I am on Windows) and once prompted with 'Enter file', I pressed enter. After getting the keyart, I then logged in to the server using `ssh`, and once on the server, used `mkdir .ssh` since .ssh is the directory we stored the file in. I then logged out of the server, back to the client computer. 
+![loggedInSC3](https://user-images.githubusercontent.com/68180000/195680977-c8eeec95-7fd9-42b3-921a-1ca339dd71d8.jpg)
 
 
 ## Optimizing Remote Running
