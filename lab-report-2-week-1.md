@@ -9,9 +9,10 @@ Fortunately I already had Visual Studio Code installed, but if you do not alread
 ## Remotely Connecting
 Now time to connect to our remote server! If you are on Windows, check to see if you have a program called OpenSSH. If you do not, use this [link](https://docs.microsoft.com/en-us/windows-server/administration/openssh/openssh_install_firstuse) to install the OpenSSH client. 
 
-Next, log in with `$ ssh cs15lfa22zz@ieng6.ucsd.edu`, replacing the 'zz' with the two letters specific to your username. Even though I had reset my password in advance, I was not able to successfully log in with my username and instead had to use the TA email and password. Once logged in this screen pops up: 
+Next, log in with `$ ssh cs15lfa22zz@ieng6.ucsd.edu`, replacing the 'zz' with the two letters specific to your username. For example, my log in would be cs15lfa22mv@ieng6.ucsd.edu. Once logged in this screen pops up: 
 
-![loggedInSC](https://user-images.githubusercontent.com/68180000/193379049-0a07d8ef-a9bb-4cbe-91d2-2744a1a07108.jpg)
+![loggedInSC1](https://user-images.githubusercontent.com/68180000/195510827-ef623d6a-8c0b-40ff-b024-9667863a12a6.jpg)
+![loggedInSC2](https://user-images.githubusercontent.com/68180000/195510878-a3a40ccc-f805-49d3-946b-4c934ffe7f87.jpg)
 
 Because I used the TA log in, I created a directory to work in with the command `mkdir ronasDirectory`. 
 
