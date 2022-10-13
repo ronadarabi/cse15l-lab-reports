@@ -52,7 +52,7 @@ To see if it is on the remote computer, use `ssh` to log in and `ls` to search f
 
 ## Setting an SSH Key
 To save time, we can make it so that we do not have to keep re-entering our passwords. This is a general overview of what the first step looks like: 
-![keygenSC](https://user-images.githubusercontent.com/68180000/193380133-5b833564-151c-4058-b5d7-89e2ee3be40e.jpg)
+![sshKeyGenSC](https://user-images.githubusercontent.com/68180000/195666824-47c5945b-7349-48bc-ab27-fcc399f6e170.jpg)
 
 First I typed in `ssh-keygen` and once prompted with 'Enter file', I pressed enter. Since I am using the TA's account, it asked me to overwrite so I pressed `y` for yes. At this point, because this is not my account, I was scared to mess anything up on the TA's account so I got stuck here and unfortunately did not finish the step (I did not have time to go to office hours but will go next week to figure everything out with my account!). However my understanding is that after getting to the screenshot, you should log in on the client computer using `ssh`. Once on server, use `mkdir .ssh` and then type `<logout>`. Back on the client computer, type in `scp` and then, on the same line, use the username and the path as seen in the screenshot. These are the steps I would take on my own account. 
 
