@@ -14,12 +14,10 @@ Next, log in with `$ ssh cs15lfa22zz@ieng6.ucsd.edu`, replacing the 'zz' with th
 ![loggedInSC1](https://user-images.githubusercontent.com/68180000/195510827-ef623d6a-8c0b-40ff-b024-9667863a12a6.jpg)
 ![loggedInSC2](https://user-images.githubusercontent.com/68180000/195510878-a3a40ccc-f805-49d3-946b-4c934ffe7f87.jpg)
 
-Because I used the TA log in, I created a directory to work in with the command `mkdir ronasDirectory`. 
-
 ## Trying Some Commands 
-Once logged in, you can try out a few commands. First, I accessed this directory using `cd ronasDirectory`. From there, I used the following command, `ls /home/linux/ieng6/cs15lfa22/cs15lfa22nf` to access my lab partner, Chris', file. The output looked like this: 
+Once logged in, you can try out a few commands. I first tried the following command, `ls /home/linux/ieng6/cs15lfa22/cs15lfa22nf` to access my lab partner, Chris', file. The output looked like this: 
 
-![outputSC](https://user-images.githubusercontent.com/68180000/193379461-26876d04-7bfb-47ed-b8ce-a41101cf09fa.jpg)
+![nfScreenshot](https://user-images.githubusercontent.com/68180000/195664172-c5a03c38-8224-49cd-a24b-62e5bca6d7b6.jpg)
 
 Other commands include: 
 
@@ -39,11 +37,18 @@ First, make sure the file is created on the client computer. The file I created 
 
 ![whereAmISC](https://user-images.githubusercontent.com/68180000/193379755-a2c7ae5a-4c5d-4ba2-9345-1463d4b6c6a1.jpg)
 
-To check if it runs we can use `javac WhereAmI.java` and then `java WhereAmI`. The first command is responsible for the compiling while the second one does the running. Then, on the terminal for the client computer (again, this is yours), type in the following `scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/` while again replacing the 'zz' with your specific letters. This will prompt you to enter a password. 
+To check if it runs we can use `javac WhereAmI.java` and then `java WhereAmI`. The first command is responsible for the compiling while the second one does the running. 
 
+![whereAmIOut1](https://user-images.githubusercontent.com/68180000/195665036-99cd31a9-08ed-4be5-8582-86f890018f98.jpg)
 
+Then, on the terminal for the client computer (again, this is yours), type in the following `scp WhereAmI.java cs15lfa22zz@ieng6.ucsd.edu:~/` while again replacing the 'zz' with your specific letters. This will prompt you to enter a password. 
 
-To see if it is on the remote computer, use `ssh` to log in and `ls` to search for it. You can then run the `javac WhereAmI.java` and `java WhereAmI` commands to verify that it worked. 
+![scpCommand](https://user-images.githubusercontent.com/68180000/195665350-66fed870-3af1-4548-bfa7-62cad3b5aa54.jpg)
+
+To see if it is on the remote computer, use `ssh` to log in and `ls` to search for it. You can then run the `javac WhereAmI.java` and `java WhereAmI` commands to verify that it worked. Notice the different output. 
+
+![whereAmIOut2](https://user-images.githubusercontent.com/68180000/195665599-3546afc7-d69a-4493-b7af-7704576483da.jpg)
+
 
 ## Setting an SSH Key
 To save time, we can make it so that we do not have to keep re-entering our passwords. This is a general overview of what the first step looks like: 
