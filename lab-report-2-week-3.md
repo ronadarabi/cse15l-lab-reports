@@ -84,15 +84,25 @@ This is what shows as you open the host link. We are looking at the first if-sta
 
 ![startingSC](https://user-images.githubusercontent.com/68180000/195934555-47a8d5cd-e6a0-4f73-87ca-ed74988772ac.jpg)
 
+---
 **/add**
 
 Here I have added the word "season". Because we used "/add", we called the second if-statement (first else-if). The code splits the query at the '=' into an array, which I called parameters, and checks that the first parameter (index 0) is "s". In this case it is, so it then adds the second paramter (index 1) to the original ArrayList that is initialized at the start of the code. 
 
 ![addedSeason](https://user-images.githubusercontent.com/68180000/195937323-9004c830-be99-495b-bb23-23c728cc7f0a.jpg)
 
-If, for example, I had tried to add a word without "s", it would look like the picture below. It would look at the same if-statement as above, but would return an error explaining that the input is invalid. 
+If, for example, I had tried to add a word without "s", it would look like the picture below. The code would go through the same if-statement as above, but would return an error explaining that the input is invalid. 
 
 ![invalidAdd](https://user-images.githubusercontent.com/68180000/195937876-d732b937-8785-4a58-8694-0649eb896934.jpg)
+
+---
+**/**
+After adding a few more words, I want to look at my full list, and I can use the "/" to see. The code executes the way it did with the default page, but this time it will show us the list since it is not empty. (Although the "/" is not visible, that was the command entered to get to this page). 
+
+![listNow](https://user-images.githubusercontent.com/68180000/195938798-a4e58220-de66-4bbe-b815-dadf1dd9e5c5.jpg)
+
+---
+**/search**
 
 
 ## Part 2
