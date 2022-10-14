@@ -87,7 +87,7 @@ This is what shows as you open the host link. We are looking at the first if-sta
 ---
 **/add**
 
-Here I have added the word "season". Because we used "/add", we called the second if-statement (first else-if). The code splits the query at the '=' into an array, which I called parameters, and checks that the first parameter (index 0) is "s". In this case it is, so it then adds the second paramter (index 1) to the original ArrayList that is initialized at the start of the code. 
+Here I have added the word "season". Because we used "/add", we called the second if-statement (first else-if). The code splits the query at the '=' into an array, which I called parameters. So we have parameters = {"s", "season"}. The code checks that the first parameter (index 0) is "s". In this case it is, so it then adds the second paramter (index 1) to the original ArrayList that is initialized at the start of the code. For every successful add we have, the value of index 1 of the parameter would be changing. For example, if we wanted to add "migration" then parameters = {"s", "migration"}. 
 
 ![addedSeason](https://user-images.githubusercontent.com/68180000/195937323-9004c830-be99-495b-bb23-23c728cc7f0a.jpg)
 
@@ -98,14 +98,14 @@ If, for example, I had tried to add a word without "s", it would look like the p
 ---
 **/**
 
-After adding a few more words, I want to look at my full list, and I can use the "/" to see. The code executes the way it did with the default page, but this time it will show us the list since it is not empty. (Although the "/" is not visible, that was the command entered to get to this page). 
+After adding a few more words, I want to look at my full list, and I can use the "/" to see. The code executes the way it did with the default page, but this time it will show us the list since it is not empty. (Although the "/" is not visible, that was the command entered to get to this page). Again, this will not change until something else is added. 
 
 ![listNow](https://user-images.githubusercontent.com/68180000/195938798-a4e58220-de66-4bbe-b815-dadf1dd9e5c5.jpg)
 
 ---
 **/search**
 
-Say I wanted to look at all the words that contain "on". I can do so using the /search command. This is the third if-statement (second else-if). Similar to add, it ensures there is a "s" in the query. If there is not, then an error message just like the one in the screenshot (under /add section) will pop up. If there is, then the code will loop through our list and add the words with "on" to a String that is then returned. 
+Say I wanted to look at all the words that contain "on". I can do so using the /search command. This is the third if-statement (second else-if). Similar to add, it ensures there is a "s" in the query. If there is not, then an error message just like the one in the screenshot (under /add section) will pop up. If there is, then the code will loop through our list and add the words with "on" to a String that is then returned. If we wanted to run another successful search, the value of index 1 of parameters would again be the one to change. If we searched for "z", as in the second screenshot in this section, then parameters = {"s", "z"}.
 
 ![searchOn](https://user-images.githubusercontent.com/68180000/195939543-9e3529f5-1fcc-4a5c-bfb0-dac36ca70d79.jpg)
 
