@@ -77,8 +77,10 @@ class SearchEngine {
 }
 
 ````
+**Default page**
 
 This is what shows as you open the host link. We are looking at the first if-statement, which checks for '/'. Since our list is empty, the site prompts the user to add and then search. Since this is not an add or search command (it is just the default), there are no arguments. This will not change until at least one word has been added.
+
 ![startingSC](https://user-images.githubusercontent.com/68180000/195934555-47a8d5cd-e6a0-4f73-87ca-ed74988772ac.jpg)
 
 
