@@ -3,6 +3,85 @@
 
 ## Part 1
 
+Below is the code for the SearchEngine: 
+````
+import java.io.IOException;
+import java.net.URI;
+import java.util.ArrayList;
+
+class Search implements URLHandler {
+    ArrayList<String> searching = new ArrayList<>();
+
+    public String handleRequest(URI url) {
+        String error = "Invalid input. Please try again.";
+        
+        // Display full list. If list is empty, tell user what to do
+        if (url.getPath().equals("/")) {
+            String all = ""; 
+            if (searching.size() == 0) { 
+                return String.format("Your list is empty! 
+                \nTry adding with /add?s=<word to add>.
+                \nTry searching with /search?s=<characters to search>");
+            } else { 
+                for (int i = 0; i < searching.size(); i++) { 
+                    all += searching.get(i) + "\n"; 
+                }
+                return "Here is your current list: \n\n" + all; 
+            }
+        // User wants to add. Check there is 's', if not send error
+        // If there is, add to ArrayList and tell user it has been added
+        } else if (url.getPath().contains("/add")) {
+            String[] parameters = url.getQuery().split("=");
+            if (parameters[0].equals("s")) { 
+                searching.add(parameters[1]); 
+                return parameters[1] + " added!";
+            } 
+            return error;
+        // User wants to search. Check for 's', if no 's' send error
+        // If there is an 's', loop through ArrayList
+        // Find Strings that contain substring. If there are none, tell user.
+        // Display all Strings in list format
+        } else if (url.getPath().contains("/search")) { 
+            String[] parameters = url.getQuery().split("=");
+            String passed = "";
+            if (parameters[0].equals("s")) { 
+                for (int i = 0; i < searching.size(); i++) { 
+                    if (searching.get(i).contains(parameters[1])) { 
+                        passed += searching.get(i) + "\n"; 
+                    }
+                }
+                if (passed.equals("")) { 
+                    return "No strings found.";
+                }
+                return passed; 
+            }
+            return error; 
+        // If user inputs anything else, return error
+        } else { 
+            return error;
+        }
+    } 
+}
+
+class SearchEngine {
+    public static void main(String[] args) throws IOException {
+        if(args.length == 0){
+            System.out.println("Missing port number! Try any number between 1024 to 49151");
+            return;
+        }
+
+        int port = Integer.parseInt(args[0]);
+
+        Server.start(port, new Search());
+    }
+}
+
+````
+
+This is what shows as you open the host link. We are looking at the first if-statement, which checks for '/'. Since our list is empty, the site prompts the user to add and then search. Since this is not an add or search command (it is just the default), there are no arguments. This will not change until at least one word has been added.
+![startingSC](https://user-images.githubusercontent.com/68180000/195934555-47a8d5cd-e6a0-4f73-87ca-ed74988772ac.jpg)
+
+
 
 ## Part 2
 
