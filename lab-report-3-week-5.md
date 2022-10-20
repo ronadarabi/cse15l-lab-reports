@@ -10,3 +10,4 @@ I had to log out of the remote to move the file with scp.
 
 ![movingFileCountTxts](https://user-images.githubusercontent.com/68180000/197064930-fe5b3494-ce31-460f-af0a-a578af4a2ee1.jpg)
 
+![countTxtsFileSC](https://user-images.githubusercontent.com/68180000/197065185-cc91f6b9-879c-49de-97d7-8427edb47bfe.jpg)
