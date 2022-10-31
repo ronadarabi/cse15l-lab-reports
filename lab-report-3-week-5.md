@@ -43,7 +43,12 @@ grep -o only prints the parts of the line that match the input. It prints on a n
 
 ## less
 
-**less -**
+**less -F**
+For this example I typed ```less -F chapter-1.txt``` and got the following output: 
+
+![less-F](https://user-images.githubusercontent.com/68180000/199083080-cae4ae48-cb6e-40a1-b054-c2f798152e9e.jpg)
+
+less -F exits out of less if the file can fit on one page. Since the contents of the file were too long, it did not exit. To exit, I pressed `q`. 
 
 **less -**
 
