@@ -59,7 +59,7 @@ less -n is supposed to suppress the line numbers for the specific file it is use
 
 **less -g**
   
- Here I tried using less -g to highlight the string that was previously searched for ("It is rather obvious"). 
+ Here I tried using less -g to highlight the string that was previously searched for ("It is rather obvious"). *In the picture I typed 002001 but caught that mistake later (it is supposed to be 0020001). 
   
  ![less-g](https://user-images.githubusercontent.com/68180000/199086711-caae6d28-348d-464f-97d8-357095703e4e.jpg)
 
