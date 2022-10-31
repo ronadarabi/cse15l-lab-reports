@@ -44,12 +44,29 @@ grep -o only prints the parts of the line that match the input. It prints on a n
 ## less
 
 **less -F**
+
 For this example I typed ```less -F chapter-1.txt``` and got the following output: 
 
 ![less-F](https://user-images.githubusercontent.com/68180000/199083080-cae4ae48-cb6e-40a1-b054-c2f798152e9e.jpg)
 
 less -F exits out of less if the file can fit on one page. Since the contents of the file were too long, it did not exit. To exit, I pressed `q`. 
 
-**less -**
+**less -n**
 
-**less -**
+![less-n](https://user-images.githubusercontent.com/68180000/199085384-b327d3cc-1050-462f-9bd9-cd97bf6de1af.jpg)
+
+less -n is supposed to suppress the line numbers for the specific file it is used on. I do not think my results uphold that. It seems, as shown in the picture, that any quotation marks or accent marks are replaced with 'codes' (e.g. <E2><80><9C>). For reference the command I used was "less -n journal.pbio.0020001.txt"
+
+**less -g**
+  
+ Here I tried using less -g to highlight the string that was previously searched for ("It is rather obvious"). 
+  
+ ![less-g](https://user-images.githubusercontent.com/68180000/199086711-caae6d28-348d-464f-97d8-357095703e4e.jpg)
+
+ This produced the same output as above. 
+  
+  ![less-g2](https://user-images.githubusercontent.com/68180000/199086762-db44163e-a0e6-468d-ae92-de6665c19975.jpg)
+
+  So it seems I am unable to get less -? to work.
+
+ 
