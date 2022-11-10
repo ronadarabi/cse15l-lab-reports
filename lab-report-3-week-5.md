@@ -1,25 +1,5 @@
 # Lab Report 3
 
-## find 
-
-**find -empty**
-
-![find-emptyEX1](https://user-images.githubusercontent.com/68180000/199066219-264b6cb2-60ab-4df7-acf4-90e537b186fc.jpg)
-
-find -empty searches for all the files and directories that are emtpy and returns a list of them. This can be useful for users who needed a quick way to locate empty files and directories. 
-
-**find -iname**
-
-![find-inameEX1](https://user-images.githubusercontent.com/68180000/199067927-e7d82dce-ef5b-4bd4-a56b-63a569e5d428.jpg)
-
-In this example I used two commands, first -type and then -iname. -type f specifies that we are looking for a file. -iname is a more specific form of -name that gives us our exact search. This can be useful if you know the name of a file but want the exact path. 
-
-**find -exec**
-
-![-execrmEX1](https://user-images.githubusercontent.com/68180000/199069144-504a25e9-d60a-4c14-aaad-defc55a80b3b.jpg)
-
-First we use find -name to find the specific file. -exec allows you to execute commands on this file. rm will remove the file, but adding -i ensures that the system asks the user before actually doing so. If you enter Y or y, it will delete the file. 
-
 ## grep 
 
 **grep -win**
@@ -40,33 +20,5 @@ I used grep -n to find a line that matches the given input (in my case it was "B
 
 grep -o only prints the parts of the line that match the input. It prints on a new line for each different line in which the input is found. So for example, "Atta and Omari" was the input, and it was found on four different lines, so the phrase printed four times on separate lines. It does not include the line number. 
 
-
-## less
-
-**less -F**
-
-For this example I typed ```less -F chapter-1.txt``` and got the following output: 
-
-![less-F](https://user-images.githubusercontent.com/68180000/199083080-cae4ae48-cb6e-40a1-b054-c2f798152e9e.jpg)
-
-less -F exits out of less if the file can fit on one page. Since the contents of the file were too long, it did not exit. To exit, I pressed `q`. 
-
-**less -n**
-
-![less-n](https://user-images.githubusercontent.com/68180000/199085384-b327d3cc-1050-462f-9bd9-cd97bf6de1af.jpg)
-
-less -n is supposed to suppress the line numbers for the specific file it is used on. I do not think my results uphold that. It seems, as shown in the picture, that any quotation marks or accent marks are replaced with 'codes' (e.g. <E2><80><9C>). For reference the command I used was "less -n journal.pbio.0020001.txt"
-
-**less -g**
-  
- Here I tried using less -g to highlight the string that was previously searched for ("It is rather obvious"). *In the picture I typed 002001 but caught that mistake later (it is supposed to be 0020001). 
-  
- ![less-g](https://user-images.githubusercontent.com/68180000/199086711-caae6d28-348d-464f-97d8-357095703e4e.jpg)
-
- This produced the same output as above. 
-  
-  ![less-g2](https://user-images.githubusercontent.com/68180000/199086762-db44163e-a0e6-468d-ae92-de6665c19975.jpg)
-
-  So it seems I am unable to get less -? to work.
 
  
