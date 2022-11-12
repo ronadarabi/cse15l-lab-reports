@@ -5,8 +5,8 @@
 **Example 1** 
 
 
-[cs15lfa22mv@ieng6-203]:911report:194$ ```find -type f```
 
+[cs15lfa22mv@ieng6-203]:911report:194$ ```find -type f```
 
 ```
 ./chapter-1.txt
@@ -27,6 +27,7 @@
 ./chapter-9.txt
 ./preface.txt
 ```
+
 This a basic example of the command. find -type f specifies that we are looking specifically for a file. We are currently in 911report, so the command will return all files in that directory in alphabetical order. 
 
 **Example 2**
