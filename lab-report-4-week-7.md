@@ -36,14 +36,15 @@ which has a total of 24 keystrokes. Because of the use of keys such as `n` and `
 
 ![nDot2](https://user-images.githubusercontent.com/68180000/201616921-e76f2d5b-2ce7-4849-b60e-5635af919a13.jpg)
 
-`w` `q` `<Enter>`
+`:` `w` `q` `<Enter>`
 
-![wqEnter](https://user-images.githubusercontent.com/68180000/201617207-dd7b86e0-547a-4986-aa82-00f13f5c71c2.jpg)
+![afterWQEnter](https://user-images.githubusercontent.com/68180000/201617596-7b35e94d-f022-4c0d-80cd-29a3555fdc28.jpg)
 
+The last screenshot is what is shown after :wq.
 
 
 ## Part 2
 
-The first method took me 01:33.17. The only part that ate up time was ensuring that I made all the changes necessary before copying it over to the remote. The second method took me XX.  
+The first method took me 01:33.17 minutes. The only part that ate up time was ensuring that I made all the changes necessary before copying it over to the remote. The second method took me 30.28 seconds. The process was much smoother, especially since I had just practiced it.  
 
 Of the two styles, it seems that `vim` is easiest as I can make a quick change and have it saved on the remote (rather than having to copy it). If the change I have to make requires a lot more work than this task, then I might opt for the first method. If I have to make small, repetitive changes, then `vim` would be a better choice!
