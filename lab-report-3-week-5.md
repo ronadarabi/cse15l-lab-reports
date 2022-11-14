@@ -3,10 +3,8 @@
 ## find -type
 
 **Example 1** 
-.
 
-
-[cs15lfa22mv@ieng6-203]:911report:194$ find -type f
+```[cs15lfa22mv@ieng6-203]:911report:194$ find -type f```
 
 ```
 ./chapter-1.txt
@@ -32,7 +30,7 @@ This a basic example of the command. find -type f specifies that we are looking 
 
 **Example 2**
 
-[cs15lfa22mv@ieng6-203]:~:197$ find -type f -iname "chapter-1.txt"
+```[cs15lfa22mv@ieng6-203]:~:197$ find -type f -iname "chapter-1.txt"```
 
 ```
 ./technical/911report/chapter-1.txt
@@ -42,7 +40,7 @@ This a basic example of the command. find -type f specifies that we are looking 
 
 **Example 3**
 
-[cs15lfa22mv@ieng6-203]:911report:202$ find -type f -name "*.txt" -exec grep 'flight to Boston' {} \;
+```[cs15lfa22mv@ieng6-203]:911report:202$ find -type f -name "*.txt" -exec grep 'flight to Boston' {} \;```
 
 ```
     When he checked in for his flight to Boston, Atta was selected by a computerized prescreening system known as CAPPS (Computer Assisted Passenger Prescreening System), created to identify passengers who should be subject to special security measures. Under security rules in place at the time, the only consequence of Atta's selection by CAPPS was that his checked bags were held off the plane until it was confirmed that he had boarded the aircraft. This did not hinder Atta's plans.
@@ -55,7 +53,7 @@ With this command we search through all files in 911report with the format .txt.
 
 **Example 1**
 
-[cs15lfa22mv@ieng6-203]:~:204$ find -name "DraftRecom-PDF.txt" -exec rm -i {} \;
+```[cs15lfa22mv@ieng6-203]:~:204$ find -name "DraftRecom-PDF.txt" -exec rm -i {} \;```
 
 ```
 rm: remove regular file './technical/government/Alcohol_Problems/DraftRecom-PDF.txt'? n
@@ -65,7 +63,7 @@ First we used -name to find the specific file. -exec allows you to execute comma
 
 **Example 2** 
 
-[cs15lfa22mv@ieng6-203]:911report:207$ find -iname "chapter-1.txt" -exec md5sum {} \;
+```[cs15lfa22mv@ieng6-203]:911report:207$ find -iname "chapter-1.txt" -exec md5sum {} \;```
 
 ```
 ab88505cef824e722ba5ab715eaca0c1  ./chapter-1.txt
@@ -75,7 +73,7 @@ This command calculates the md5sum on chapter-1.txt file in 911report. md5sum is
 
 **Example 3**
 
-[cs15lfa22mv@ieng6-203]:911report:208$ find -type f -exec ls -s {} \; | sort -n | head -5 
+```[cs15lfa22mv@ieng6-203]:911report:208$ find -type f -exec ls -s {} \; | sort -n | head -5```
 
 ```
 12 ./preface.txt
@@ -92,7 +90,7 @@ This command returns the top 5 smallest files in the directory 911report. head -
 
 **Example 1**
 
-[cs15lfa22mv@ieng6-203]:911report:219$ find -size -200M
+```[cs15lfa22mv@ieng6-203]:911report:219$ find -size -200M```
 
 ```
 .
@@ -119,7 +117,7 @@ I used this command to find files in 911 report smaller than 200M, which turns o
 
 **Example 2**
 
-[cs15lfa22mv@ieng6-203]:911report:228$ find -type f -name "*.txt" -size +105k -exec rm -i {} \;
+```[cs15lfa22mv@ieng6-203]:911report:228$ find -type f -name "*.txt" -size +105k -exec rm -i {} \;```
 
 ```
 rm: remove regular file './chapter-1.txt'? n
@@ -138,7 +136,7 @@ This example is similar to example one in find -exec, but this time we are delet
 
 **Example 3**
 
-[cs15lfa22mv@ieng6-203]:911report:231$ find -size +105k -size  -125k
+```[cs15lfa22mv@ieng6-203]:911report:231$ find -size +105k -size  -125k```
 
 ```
 ./chapter-1.txt
