@@ -10,4 +10,4 @@
 
 [Lab Report 4](https://ronadarabi.github.io/cse15l-lab-reports/lab-report-4-week-7.html)
 
-[Lab Report 5]()
+[Lab Report 5](https://ronadarabi.github.io/cse15l-lab-reports/lab-report-5-week-9.html)
